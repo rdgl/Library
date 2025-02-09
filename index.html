@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLibrary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1 style="font-size: 50px; margin-bottom: 100px; margin-top: 50px;">My <i>Book Library</i></h1>
+            <input type="text" id="search-bar" placeholder="Search for books  ..." />
+        </header>
+
+        <div class="genre-selector">
+            <label style="margin-right: 20px; margin-top: 12px;" for="genre-selector"><i>Select Genre :</i></label>
+            <select id="genre-selector">
+                <option value="random">Random</option>
+                <option value="fiction">Fiction</option>
+                <option value="nonfiction">Non-fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="biography">Biography</option>
+            </select>
+            <button id="reload-suggestions">Reload Suggestions</button>
+        </div>
+
+        <div class="recommendations">
+            <h2 style="margin-bottom: 50px;">Book Recommendations</h2>
+            <div id="recommendation-list" class="book-list"></div>
+        </div>
+
+        <div class="shelves">
+            <div id="to-read" class="shelf">
+                <h4>To Read</h4>
+                <div class="book-list"></div>
+            </div>
+            <div id="reading" class="shelf">
+                <h4>Reading</h4>
+                <div class="book-list"></div>
+            </div>
+            <div id="completed" class="shelf">
+                <h4>Completed</h4>
+                <div class="book-list"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
