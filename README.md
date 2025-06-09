@@ -6,4 +6,4 @@ This Application helps users organize their personal library, track their readin
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/book-library-organizer.git
+   git clone https://github.com/rdgl/Library.git
